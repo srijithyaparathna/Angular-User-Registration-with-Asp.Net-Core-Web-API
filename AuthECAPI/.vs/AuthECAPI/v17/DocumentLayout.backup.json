@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|c:\\users\\syapa\\onedrive\\desktop\\angular user registration with asp.net core web api\\authecapi\\authecapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|solutionrelative:authecapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|c:\\users\\syapa\\onedrive\\desktop\\angular user registration with asp.net core web api\\authecapi\\authecapi\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|solutionrelative:authecapi\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|c:\\users\\syapa\\onedrive\\desktop\\angular user registration with asp.net core web api\\authecapi\\authecapi\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|solutionrelative:authecapi\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|c:\\users\\syapa\\onedrive\\desktop\\angular user registration with asp.net core web api\\authecapi\\authecapi\\migrations\\20250314030418_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|solutionrelative:authecapi\\migrations\\20250314030418_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|c:\\users\\syapa\\onedrive\\desktop\\angular user registration with asp.net core web api\\authecapi\\authecapi\\authecapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|solutionrelative:authecapi\\authecapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|c:\\users\\syapa\\onedrive\\desktop\\angular user registration with asp.net core web api\\authecapi\\authecapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|solutionrelative:authecapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|c:\\users\\syapa\\onedrive\\desktop\\angular user registration with asp.net core web api\\authecapi\\authecapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|solutionrelative:authecapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|c:\\users\\syapa\\onedrive\\desktop\\angular user registration with asp.net core web api\\authecapi\\authecapi\\authecapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{01A498EA-5B7D-4E7A-A251-976EF99A2817}|AuthECAPI\\AuthECAPI.csproj|solutionrelative:authecapi\\authecapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "AuthECAPI\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\Models\\AppUser.cs",
+              "RelativeToolTip": "AuthECAPI\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T03:26:16.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250314030418_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\Migrations\\20250314030418_InitialMigration.cs",
+              "RelativeDocumentMoniker": "AuthECAPI\\Migrations\\20250314030418_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\Migrations\\20250314030418_InitialMigration.cs",
+              "RelativeToolTip": "AuthECAPI\\Migrations\\20250314030418_InitialMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T03:04:19.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AuthECAPI\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "AuthECAPI\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T02:07:32.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthECAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\AuthECAPI.csproj",
+              "RelativeDocumentMoniker": "AuthECAPI\\AuthECAPI.csproj",
+              "ToolTip": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\AuthECAPI.csproj",
+              "RelativeToolTip": "AuthECAPI\\AuthECAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-14T00:24:57.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AuthECAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\Program.cs",
+              "RelativeToolTip": "AuthECAPI\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAG0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T00:23:37.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "AuthECAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "AuthECAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-14T00:23:47.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthECAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\appsettings.json",
+              "RelativeToolTip": "AuthECAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-14T00:23:43.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthECAPI.http",
+              "DocumentMoniker": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\AuthECAPI.http",
+              "RelativeDocumentMoniker": "AuthECAPI\\AuthECAPI.http",
+              "ToolTip": "C:\\Users\\syapa\\OneDrive\\Desktop\\Angular User Registration with Asp.Net Core Web API\\AuthECAPI\\AuthECAPI\\AuthECAPI.http",
+              "RelativeToolTip": "AuthECAPI\\AuthECAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-14T00:23:41.336Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
