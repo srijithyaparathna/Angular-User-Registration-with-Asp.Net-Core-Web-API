@@ -1,115 +1,61 @@
-// Import necessary namespaces
+// Import necessary namespaces for authentication, identity, entity framework, JWT, etc.
+using AuthECAPI.Controllers;
+using AuthECAPI.Extensions;
 using AuthECAPI.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
+// Create a WebApplication builder to set up and configure the app.
 var builder = WebApplication.CreateBuilder(args);
 
-// ============================ Configure Services ============================
+// =============================
+// Add services to the container.
+// =============================
 
-// Add controllers to the service container, enabling the use of API controllers.
+// Add controller services to handle HTTP requests.
 builder.Services.AddControllers();
 
-// Add support for API documentation using Swagger (for testing and documentation purposes).
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-// ===== Configure Identity (Authentication and Authorization) =====
-// Registers the Identity services with the AppUser model and AppDbContext.
-// - AppUser: Custom user model that extends IdentityUser.
-// - AppDbContext: Custom DbContext that handles database operations.
+// Add custom service configurations using extension methods for cleaner code.
 builder.Services
-    .AddIdentityApiEndpoints<AppUser>()  // Adds minimal API endpoints for Identity management (like login, logout, etc.).
-    .AddEntityFrameworkStores<AppDbContext>();  // Configures Identity to use Entity Framework for persisting data in AppDbContext.
+    .AddSwaggerExplorer()              // Adds Swagger (API documentation) configuration.
+    .InjectDbContext(builder.Configuration) // Injects the database context using the app's configuration.
+    .AddAppConfig(builder.Configuration)    // Adds additional app-specific configurations.
+    .AddIdentityHandlersAndStores()   // Configures Identity for user management.
+    .ConfigureIdentityOptions()       // Sets Identity options like password policies, etc.
+    .AddIdentityAuth(builder.Configuration); // Adds authentication mechanisms, especially JWT handling.
 
-// ===== Configure Identity Options =====
-// These settings customize the default password and user requirements.
-builder.Services.Configure<IdentityOptions>(options =>
-{
-    options.Password.RequireDigit = false;  // No need for numbers in the password.
-    options.Password.RequireUppercase = false;  // No need for uppercase letters.
-    options.Password.RequireLowercase = false;  // No need for lowercase letters.
-    options.User.RequireUniqueEmail = true;  // Ensures no two users have the same email.
-});
-
-// ===== Configure Database Connection =====
-// Configures the app to use SQL Server with the connection string from appsettings.json.
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DevDB")));
-
-// ============================ Configure Middleware ============================
-
+// Build the app with the configured services.
 var app = builder.Build();
 
-// ===== Configure the HTTP request pipeline =====
-// These middlewares handle requests and responses.
+// ======================================
+// Configure the HTTP request pipeline.
+// ======================================
 
-if (app.Environment.IsDevelopment())
-{
-    // Enable Swagger only in development mode to avoid exposing it in production.
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// Enable Swagger for API documentation and testing.
+app.ConfigureSwaggerExplorer();
 
-// ===== Configure CORS (Cross-Origin Resource Sharing) =====
-// This allows requests from your Angular app running on http://localhost:4200.
-app.UseCors(options =>
-    options.WithOrigins("http://localhost:4200")  // Allow requests only from this origin.
-           .AllowAnyMethod()  // Allow all HTTP methods (GET, POST, PUT, DELETE, etc.).
-           .AllowAnyHeader());  // Allow all headers.
+// Set up Cross-Origin Resource Sharing (CORS) to control access from different origins.
+app.ConfigureCORS(builder.Configuration);
 
-// ===== Authorization Middleware =====
-// Ensures only authenticated users can access protected endpoints.
-app.UseAuthorization();
+// Add authentication and authorization middlewares to handle JWT and user identity.
+app.AddIdentityAuthMiddlewares();
 
-// ===== Map Controllers =====
-// Maps the controller actions to the app's request pipeline.
+// Map controller routes to handle incoming requests through the controllers.
 app.MapControllers();
 
-// ===== Map Identity API Endpoints =====
-// Provides predefined endpoints for user authentication (like login, logout, and user management).
-app
-    .MapGroup("/api")  // Group all identity-related endpoints under the "/api" route.
-    .MapIdentityApi<AppUser>();  // Exposes Identity API endpoints (e.g., /api/login, /api/register).
+// Map Identity API endpoints under the "/api" route to handle user authentication and registration.
+app.MapGroup("/api")
+   .MapIdentityApi<AppUser>();
 
-// ============================ Custom Endpoints ============================
+// Map additional user-related endpoints under the "/api" route for user-specific operations.
+app.MapGroup("/api")
+   .MapIdentityUserEndpoints();
 
-// Custom endpoint for user registration.
-// This creates a new user when the frontend sends a POST request to /api/signup.
-app.MapPost("/api/signup", async (
-    UserManager<AppUser> userManager,  // Provides methods to manage users (e.g., create, delete, find, etc.).
-    [FromBody] UserRegistrationModel userRegistrationModel  // Binds the request body to this model.
-) =>
-{
-    // Create a new AppUser instance with the provided data.
-    AppUser user = new AppUser()
-    {
-        UserName = userRegistrationModel.Email,  // Use email as the username.
-        Email = userRegistrationModel.Email,
-        FullName = userRegistrationModel.FullName,
-    };
-
-    // Attempt to create the user with the provided password.
-    var result = await userManager.CreateAsync(
-        user,
-        userRegistrationModel.Password);
-
-    // Return appropriate HTTP responses based on the result.
-    if (result.Succeeded)
-        return Results.Ok(result);  // Returns 200 OK if user creation is successful.
-    else
-        return Results.BadRequest(result);  // Returns 400 Bad Request if something goes wrong.
-});
-
-// Start the application.
+// Start running the application and listen for incoming HTTP requests.
 app.Run();
-
-// ============================ Data Models ============================
-// This model is used to bind incoming registration data from the client.
-public class UserRegistrationModel
-{
-    public string Email { get; set; }
-    public string Password { get; set; }
-    public string FullName { get; set; }
-}

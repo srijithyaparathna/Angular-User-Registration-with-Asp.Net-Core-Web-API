@@ -1,0 +1,38 @@
+<div class="mb-4">
+  <div class="mb-4 h2 text-success">Sign up</div>
+  <div>Don't have an account?
+    <a href="/signup" class="text-decoration-none fw-medium d-inline-block text-success">Sign up</a>
+  </div>
+</div>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <!-- Email Field -->
+  <div class="mb-3">
+    <input class="form-control bg-body-secondary" placeholder="Email" formControlName="email">
+    <div class="text-danger" *ngIf="form.get('email')?.touched">
+      <div *ngIf="form.get('email')?.hasError('required')">
+        Please enter your email address.
+      </div>
+      <div *ngIf="form.get('email')?.hasError('email')">
+        Please enter a valid email address.
+      </div>
+    </div>
+  </div>
+
+  <!-- Password Field -->
+  <div class="mb-3">
+    <input type="password" class="form-control bg-body-secondary" placeholder="Password" formControlName="password">
+    <div class="text-danger" *ngIf="form.get('password')?.touched">
+      <div *ngIf="form.get('password')?.hasError('required')">
+        Please enter your password.
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit Button -->
+  <div class="mt-4">
+    <button type="submit" class="btn btn-success w-100 rounded-3" [disabled]="form.invalid">
+      Sign in
+    </button>
+  </div>
+</form>

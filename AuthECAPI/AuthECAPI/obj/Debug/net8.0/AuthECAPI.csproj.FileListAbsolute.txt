@@ -145,3 +145,5 @@ C:\Users\syapa\OneDrive\Desktop\Angular User Registration with Asp.Net Core Web 
 C:\Users\syapa\OneDrive\Desktop\Angular User Registration with Asp.Net Core Web API\AuthECAPI\AuthECAPI\obj\Debug\net8.0\AuthECAPI.pdb
 C:\Users\syapa\OneDrive\Desktop\Angular User Registration with Asp.Net Core Web API\AuthECAPI\AuthECAPI\obj\Debug\net8.0\AuthECAPI.genruntimeconfig.cache
 C:\Users\syapa\OneDrive\Desktop\Angular User Registration with Asp.Net Core Web API\AuthECAPI\AuthECAPI\obj\Debug\net8.0\ref\AuthECAPI.dll
+C:\Users\syapa\OneDrive\Desktop\Angular User Registration with Asp.Net Core Web API\AuthECAPI\AuthECAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\syapa\OneDrive\Desktop\Angular User Registration with Asp.Net Core Web API\AuthECAPI\AuthECAPI\obj\Debug\net8.0\AuthECAPI.sourcelink.json
